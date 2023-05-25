@@ -1,14 +1,15 @@
 /* eslint-disable react/prop-types */
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-export const DisplayCountry = ({ image, title, population, capital, region, topLevelDomain, currencies, countryBorders, languages }) => {
+export const DisplayCountry = ({ image, title, population, capital, region, topLevelDomain, currencies, countryBorders, languages, nativeName, subRegion }) => {
 
 
 
     return <>
         <div className="country">
             <div className="country-back-btn">
-                <p> <ArrowBackIcon/> Back</p>
+                <ArrowBackIcon />
+                <p>Back</p>
             </div>
             <div className="country-page-card">
                 <div className="country-image-holder">
@@ -19,11 +20,20 @@ export const DisplayCountry = ({ image, title, population, capital, region, topL
                     <h1>{title}</h1>
                     <div className="p-holder">
                         <p>
+                            <span>Native Name: </span>
+                            {nativeName}
+                        </p>
+
+                        <p>
                             <span>Population: </span>
                             {population}
                         </p>
                         <p>
                             <span>Region: </span> {region}
+                        </p>
+                        <p>
+                            <span>Sub Region: </span>
+                            {subRegion}
                         </p>
                         <p>
                             <span>Capital: </span>
@@ -48,7 +58,7 @@ export const DisplayCountry = ({ image, title, population, capital, region, topL
                     <span>Languages: </span>
                     {
                         languages.map((lang, i) => {
-                            if (i === languages.length -1) return lang.name
+                            if (i === languages.length - 1) return lang.name
                             return `${lang.name} ,`
                         })
                     }
@@ -58,7 +68,9 @@ export const DisplayCountry = ({ image, title, population, capital, region, topL
 
             </div>
 
-
+             <div className="country-border-text">
+                <h4>Border Countries:</h4>
+             </div>
             <div className="country-borders">
                 {
                     countryBorders.map((country, i) => {

@@ -130,3 +130,72 @@ img {
 span {
   font-weight: bold;
 }
+
+.country{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: right;
+  padding: 2em;
+  gap: 1rem;
+}
+
+.country-back-btn{
+  display: flex;
+  align-self: flex-start;
+  align-content: center ;
+  gap: 0.1em;
+  padding: 0.2em 1em;
+  border-radius: 2px;
+  font-size: 0.8rem ;
+  font-weight: 600;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2)
+}
+.country-back-btn svg{
+ height: 0.75em;
+}
+
+.country-page-card{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.country-content-holder{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.2em;
+}
+.country-content-holder span{
+  font-weight: 600 ;
+}
+.country-details {
+  font-weight: 600 ;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5em;
+}
+.country-details span{
+  font-weight: 600 ;
+
+}
+.country-borders{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.2em;
+}
+.country-border-name{
+  display: flex;
+  align-content: center ;
+  padding: 0.2em 1em;
+  border-radius: 2px;
+  font-size: 0.8rem ;
+  font-weight: 600;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2)
+}

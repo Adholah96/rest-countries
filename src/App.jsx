@@ -12,12 +12,14 @@ function App() {
     "topLevelDomain": [".af"],
     "capital": "Kabul",
     "region": "Asia",
+    "subregion": "Southern Asia",
     "population": 40218234,
     "borders": ["IRN", "PAK", "TKM", "UZB", "TJK", "CHN"],
     "flags": {
       "svg": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
       "png": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/320px-Flag_of_the_Taliban.svg.png"
     },
+    "nativeName": "افغانستان",
     "currencies": [
       {
         "code": "AFN",
@@ -60,7 +62,7 @@ function App() {
     //         key={i}
     //         title={countries.name}
     //         capital={countries.capital}
-    //         region={countries.region}
+    //         reg "nativeName": "افغانستان",ion={countries.region}
     //         population={countries.population}
     //         image={countries.flags.png}
     //       />
@@ -78,6 +80,8 @@ function App() {
      currencies={data.currencies}
      countryBorders={data.borders}
      languages={data.languages}
+     nativeName={data.nativeName}
+     subRegion={data.subregion}
     />
   );
 }
