@@ -2,54 +2,87 @@ import './App.css';
 import Nav from './components/nav';
 import { Filter } from './components/filter';
 import { Country } from './components/country';
-import data from '/data.json';
+// import data from '/data.json';
 import { DisplayCountry } from './routes/displayCountry';
 
 function App() {
 
   const data ={
-    "name": "Afghanistan",
-    "topLevelDomain": [".af"],
-    "capital": "Kabul",
-    "region": "Asia",
-    "subregion": "Southern Asia",
-    "population": 40218234,
-    "borders": ["IRN", "PAK", "TKM", "UZB", "TJK", "CHN"],
+    "name": "Algeria",
+    "topLevelDomain": [".dz"],
+    "alpha2Code": "DZ",
+    "alpha3Code": "DZA",
+    "callingCodes": ["213"],
+    "capital": "Algiers",
+    "altSpellings": ["DZ", "Dzayer", "Algérie"],
+    "subregion": "Northern Africa",
+    "region": "Africa",
+    "population": 44700000,
+    "latlng": [28, 3],
+    "demonym": "Algerian",
+    "area": 2381741,
+    "gini": 27.6,
+    "timezones": ["UTC+01:00"],
+    "borders": ["TUN", "LBY", "NER", "ESH", "MRT", "MLI", "MAR"],
+    "nativeName": "الجزائر",
+    "numericCode": "012",
     "flags": {
-      "svg": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
-      "png": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/320px-Flag_of_the_Taliban.svg.png"
+      "svg": "https://flagcdn.com/dz.svg",
+      "png": "https://flagcdn.com/w320/dz.png"
     },
-    "nativeName": "افغانستان",
     "currencies": [
       {
-        "code": "AFN",
-        "name": "Afghan afghani",
-        "symbol": "؋"
+        "code": "DZD",
+        "name": "Algerian dinar",
+        "symbol": "د.ج"
       }
     ],
     "languages": [
       {
-        "iso639_1": "ps",
-        "iso639_2": "pus",
-        "name": "Pashto",
-        "nativeName": "پښتو"
-      },
-      {
-        "iso639_1": "uz",
-        "iso639_2": "uzb",
-        "name": "Uzbek",
-        "nativeName": "Oʻzbek"
-      },
-      {
-        "iso639_1": "tk",
-        "iso639_2": "tuk",
-        "name": "Turkmen",
-        "nativeName": "Türkmen"
+        "iso639_1": "ar",
+        "iso639_2": "ara",
+        "name": "Arabic",
+        "nativeName": "العربية"
       }
     ],
-   
-    "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
-    
+    "translations": {
+      "br": "Aljeria",
+      "pt": "Argélia",
+      "nl": "Algerije",
+      "hr": "Alžir",
+      "fa": "الجزایر",
+      "de": "Algerien",
+      "es": "Argelia",
+      "fr": "Algérie",
+      "ja": "アルジェリア",
+      "it": "Algeria",
+      "hu": "Algéria"
+    },
+    "flag": "https://flagcdn.com/dz.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "AU",
+        "name": "African Union",
+        "otherNames": [
+          "الاتحاد الأفريقي",
+          "Union africaine",
+          "União Africana",
+          "Unión Africana",
+          "Umoja wa Afrika"
+        ]
+      },
+      {
+        "acronym": "AL",
+        "name": "Arab League",
+        "otherNames": [
+          "جامعة الدول العربية",
+          "Jāmiʻat ad-Duwal al-ʻArabīyah",
+          "League of Arab States"
+        ]
+      }
+    ],
+    "cioc": "ALG",
+    "independent": true
   }
   
   return (
@@ -75,7 +108,7 @@ function App() {
     capital={data.capital}
     region={data.region}
     population={data.population}
-    image={data.flags.png}
+    image={data.flags.svg}
     topLevelDomain={data.topLevelDomain}
      currencies={data.currencies}
      countryBorders={data.borders}
