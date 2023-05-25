@@ -173,11 +173,11 @@ span {
   font-weight: 600 ;
 }
 .country-details {
-  font-weight: 600 ;
   display: flex;
   flex-flow: column nowrap;
   gap: 0.5em;
 }
+
 .country-details span{
   font-weight: 600 ;
 
