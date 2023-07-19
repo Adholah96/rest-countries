@@ -192,9 +192,9 @@ span {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  gap: 0.2em;
+  gap: 0.5em;
 }
 .country-border-name{
   display: flex;
