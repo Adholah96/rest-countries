@@ -17,7 +17,7 @@ export const DisplayCountry = ({ image, title, population, capital, region, topL
                 </div>
 
                 <div className="country-content-holder">
-                    <h1>{title}</h1>
+                    <h2>{title}</h2>
                     <div className="p-holder">
                         <p>
                             <span>Native Name: </span>
@@ -67,8 +67,8 @@ export const DisplayCountry = ({ image, title, population, capital, region, topL
 
 
             </div>
-
-             <div className="country-border-text">
+            <div className="country-border-container">
+            <div className="country-border-text">
                 <h4>Border Countries:</h4>
              </div>
             <div className="country-borders">
@@ -79,6 +79,8 @@ export const DisplayCountry = ({ image, title, population, capital, region, topL
                 }
 
             </div>
+            </div>
+             
 
         </div>
 
