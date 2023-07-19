@@ -139,7 +139,8 @@ span {
   justify-content: space-between;
   align-items: right;
   padding: 2em;
-  gap: 1rem;
+  row-gap: 2rem;
+
 }
 
 .country-back-btn{
@@ -181,6 +182,11 @@ span {
 .country-details span{
   font-weight: 600 ;
 
+}
+.country-border-container{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5em;
 }
 .country-borders{
   width: 100%;
