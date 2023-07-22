@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const Country = ({ image, title, population, region, capital }) => {
+export const Country = ({ image, title, population, region, capital ,onClick }) => {
   return (
-    <div className="country-card">
+    <div className="country-card" onClick={onClick}>
       <div className="image-holder">
         <img src={image} alt={`${title} - flag`} />
       </div>
